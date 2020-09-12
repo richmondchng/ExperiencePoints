@@ -29,7 +29,6 @@ public class ExperienceEntity {
 
     @Id
     @Column(name = "player_id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int playerId;
 
     @Column(name = "balance")

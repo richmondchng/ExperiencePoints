@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Object describing player's experience balance.
- * 
+ *
  * @author richmondchng
  *
  */
@@ -21,6 +21,13 @@ public class ExperienceDTO {
     @JsonProperty(value = "updated_at_timestamp")
     private LocalDateTime updatedAtTimestamp;
 
+    /**
+     * Constructor.
+     * 
+     * @param balance            points balance
+     * @param createdAtTimestamp created timestamp
+     * @param updatedAtTimestamp updated timestamp
+     */
     public ExperienceDTO(final int balance, final LocalDateTime createdAtTimestamp,
             final LocalDateTime updatedAtTimestamp) {
         this.balance = balance;
