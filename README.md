@@ -6,7 +6,7 @@ To setup application
    - `cd xpmanagement`
 3. Run command to build Spring Boot Jar file
    - `.\mvnw clean install`
-4. When completed, navigate back to the `root` directory.
+4. When completed, **navigate back to the** `root` **directory**.
    - `cd ..`
 5. Run Docker compose to build image and launch containers.
    - `docker-compose up`
