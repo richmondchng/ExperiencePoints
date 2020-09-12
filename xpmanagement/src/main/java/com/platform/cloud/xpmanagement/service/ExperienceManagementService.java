@@ -47,4 +47,14 @@ public class ExperienceManagementService {
         return new ExperienceDTO(experience.getBalance(), experience.getCreatedAtTimestamp(),
                 experience.getUpdatedAtTimestamp());
     }
+
+    /**
+     * Add points to player.
+     * 
+     * @param playerId player Id
+     * @param points   points to add
+     */
+    public void addExperiencePoints(final int playerId, final int points) {
+
+    }
 }
