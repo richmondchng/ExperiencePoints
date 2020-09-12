@@ -2,8 +2,6 @@ package com.platform.cloud.xpmanagement.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-
 /**
  * Composite key.
  *
@@ -13,10 +11,8 @@ import javax.persistence.Column;
 public class ExperienceId implements Serializable {
     private static final long serialVersionUID = -455266744650980908L;
 
-    @Column(name = "experience_id")
     private int experienceId;
 
-    @Column(name = "player_id")
     private int playerId;
 
     public ExperienceId() {

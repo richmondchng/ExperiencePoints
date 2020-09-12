@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,12 +28,13 @@ public class ExperienceLogEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumns({ @JoinColumn(name = "experienceId", referencedColumnName = "experience_id"),
-        @JoinColumn(name = "playerId", referencedColumnName = "player_id") })
+            @JoinColumn(name = "playerId", referencedColumnName = "player_id") })
     private ExperienceEntity experience;
 
     @Column(name = "amount")
     private int amount;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "type")
     private ExperienceType type;
 
